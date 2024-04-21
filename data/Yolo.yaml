@@ -1,0 +1,65 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../dataset # dataset root dir
+train: ..dataset/train/images # train images (relative to 'path') 128 images
+val: ..dataset/val/images # val images (relative to 'path') 128 images
+test: # test images (optional)
+
+# Classes
+names:
+  0: Aluminium_foil
+  1: Background
+  2: Cardboard
+  3: Cig_bud
+  4: Cig_pack
+  5: Disposable
+  6: E-Waste
+  7: Foam Paper
+  8: Foam cups and plates
+  9: Garbage
+  10: Glass_bottle
+  11: Light bulbs
+  12: Mask
+  13: Metal
+  14: Papar_Cup
+  15: Nylon_sting
+  16: Plastic
+  17: Plastic_Bag
+  18: Plastic_Container
+  19: Plastic_Glass
+  20: Plastic_Straw
+  21: Plastic_bottle
+  22: Plastic_tray
+  23: Plastic_wraper
+  24: Steel_Bottle
+  25: Tetrapack
+  26: Thermocol
+  27: Toothpaste
+  28: can
+  29: contaminated_waste
+  30: diaper_sanitarypad
+  31: tin_box
+  32: top_view_waste
+  33: wood
+  34: baseball bat
+  35: baseball glove
+  36: skateboard
+  37: surfboard
+  38: tennis racket
+  39: bottle
+  40: wine glass
+  41: cup
+  42: fork
+  43: knife
+  44: spoon
+  45: bowl
+  
+# Download script/URL (optional)
+download: https://universe.roboflow.com/capstoneproject-xockj/wastesegment_combineddataset5/dataset/1
